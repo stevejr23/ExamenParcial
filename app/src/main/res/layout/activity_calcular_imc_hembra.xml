@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calcular_IMC_Hembra">
+
+
+    <TextView
+        android:id="@+id/tv_Calcular_IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PETS - Calcular IMC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titleIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="IMC Canino"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Calcular_IMC" />
+
+    <Button
+        android:id="@+id/btn_calcularIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:text="Calcular IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_calculo"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <TextView
+        android:id="@+id/et_peso"
+        android:layout_width="263dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:hint="Peso Corporal Kg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titleIMC" />
+
+    <TextView
+        android:id="@+id/et_Altura"
+        android:layout_width="261dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Altura del hombro en cm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_peso" />
+
+    <TextView
+        android:id="@+id/et_Occipucio"
+        android:layout_width="260dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Occipucio a base de la cola cm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Altura" />
+
+    <TextView
+        android:id="@+id/et_genero"
+        android:layout_width="259dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Genero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Occipucio" />
+
+    <TextView
+        android:id="@+id/et_nombre"
+        android:layout_width="258dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_genero" />
+
+    <TextView
+        android:id="@+id/et_raza"
+        android:layout_width="255dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Raza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+    <TextView
+        android:id="@+id/et_calculo"
+        android:layout_width="254dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:hint="Tipo de calculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_raza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
